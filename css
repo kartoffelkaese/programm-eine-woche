@@ -1,0 +1,121 @@
+<!-- <button class="button-voll">Ausgebucht</button> -->
+<style>
+    .infobox {
+        border: 2px solid #fff;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border-radius: 15px;
+        margin-bottom: 5px;
+    }
+
+    #verpackung>div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
+        min-height: 200px;
+    }
+
+    #verpackung>div>div {
+        border: 2px solid #a50775;
+        width: 32%;
+        margin-bottom: 5px;
+        height: auto;
+        padding: 0 0 20px 0;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    #boxen {
+        justify-content: space-between;
+    }
+
+    .tag {
+        font-size: 40px;
+    }
+
+    .tag:hover .datum:hover .uhrzeit:hover {
+        color: #000;
+    }
+
+    .button {
+        background-color: #a50775;
+        border: none;
+        color: #fff;
+        padding: 0 15px;
+        margin-top: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: .975rem;
+        line-height: 30px;
+        border-radius: 5px;
+    }
+
+    .button-voll {
+        background-color: #f00;
+        border: none;
+        color: #fff;
+        padding: 0 15px;
+        margin-top: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: .975rem;
+        line-height: 30px;
+        border-radius: 5px;
+    }
+
+    .cancelled {
+        font-size: 35px;
+        color: red;
+        z-index: 1;
+        -moz-transform: rotate(320deg) translate(50px, -50px);
+        -webkit-transform: rotate(320deg) translate(50px, -50px);
+        -o-transform: rotate(320deg) translate(50px, -50px);
+        -ms-transform: rotate(320deg) translate(20px, -50px);
+        transform: rotate(320deg) translate(30px, -30px);
+        margin-bottom: -30px;
+    }
+
+    .button:hover {
+        background-color: #242021;
+    }
+
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* Mobilversion unten */
+    @media screen and (max-width: 767px) {
+        #verpackung>div>div {
+            border: 2px solid #a50775;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-bottom: 5px;
+            padding: 0 0 15px 0;
+            height: auto;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .infobox {
+            border: none;
+        }
+
+        .infoboxm {
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 5px;
+            border: 2px solid #fff;
+            border-radius: 15px;
+            padding: 3px;
+        }
+    }
+</style>
